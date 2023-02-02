@@ -170,10 +170,11 @@ html {
 }
 
 /* menu */
+
 .mopen {
   float: left;
   display: block;
-  background: rgba(255, 255, 255, 0);
+  background: #f44f00;
   position: relative;
   z-index: 1000;
 }
@@ -192,9 +193,11 @@ html {
 }
 .mopen .top {
   transform: translateY(-17px);
+  background: #f44f00;
 }
 .mopen .bottom {
   transform: translateY(17px);
+  background: #f44f00;
 }
 .mopen.is-open span {
   background: #f44f00;
@@ -204,9 +207,11 @@ html {
 }
 .mopen.is-open .top {
   transform: rotate(-45deg) translateY(0px);
+  background: #f44f00;
 }
 .mopen.is-open .bottom {
   transform: rotate(45deg) translateY(0px);
+  background: #f44f00;
 }
 
 /* menu bg */
