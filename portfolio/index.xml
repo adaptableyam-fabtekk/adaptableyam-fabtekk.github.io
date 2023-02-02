@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Portfolio on Fabtekk Engineering</title>
-    <link>https://fabtekk.com/portfolio/</link>
+    <link>https://adaptableyam-fabtekk.github.io/portfolio/</link>
     <description>Recent content in Portfolio on Fabtekk Engineering</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Jan 2023 19:38:06 +0000</lastBuildDate><atom:link href="https://fabtekk.com/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Jan 2023 19:38:06 +0000</lastBuildDate><atom:link href="https://adaptableyam-fabtekk.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oven refurb</title>
-      <link>https://fabtekk.com/portfolio/oven-refurb/</link>
+      <link>https://adaptableyam-fabtekk.github.io/portfolio/oven-refurb/</link>
       <pubDate>Sun, 29 Jan 2023 19:37:08 +0000</pubDate>
       
-      <guid>https://fabtekk.com/portfolio/oven-refurb/</guid>
+      <guid>https://adaptableyam-fabtekk.github.io/portfolio/oven-refurb/</guid>
       <description>This was a project where we refurbed an oven lol</description>
     </item>
     
