@@ -1,15 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>New Live Echidna</title>
+    <meta property="og:title" content="New Live Echidna" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Fabtekk-Design</title>
-    </head>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Roboto;
+        font-size: 1rem;
+      }
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.01em;
+        line-height: 1.6;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container1">
+        <navigation-wrapper class="navigation-wrapper">
+          <!--Navigation component-->
+          <div class="navigation-container1">
+            <div class="navigation-container2">
+              <div class="navigation-container3">
+                <style>
+                  @media (prefers-reduced-motion: reduce) {
+                  .navigation-mobile-overlay.is-active {
+                    animation: none;
+                  }
+                  .navigation-mobile-link:hover {
+                    transform: none;
+                  }
+                  }
+                </style>
+              </div>
+            </div>
+            <nav id="main-nav" class="navigation-bar">
+              <div class="navigation-container">
+                <a href="index.html">
+                  <div aria-label="FABtekk Home" class="navigation-logo-link">
+                    <div class="navigation-logo-content">
+                      <div class="navigation-logo-icon">
+                        <img
+                          src="166167df-61ec-493d-99e1-00f486e578aa"
+                          alt="FABtekk Logo"
+                          width="32"
+                          height="32"
+                        />
+                      </div>
+                      <span class="navigation-brand-name section-title">
+                        FABtekk
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <div class="navigation-desktop-links">
+                  <a href="index.html">
+                    <div class="navigation-link"><span>Services</span></div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-link"><span>Maintenance</span></div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-link"><span>Inspections</span></div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-link"><span>About Us</span></div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-cta btn btn-primary btn-sm">
+                      <span>Contact Engineering</span>
+                    </div>
+                  </a>
+                </div>
+                <button
+                  id="mobile-menu-open"
+                  aria-label="Open Menu"
+                  aria-expanded="false"
+                  class="navigation-mobile-toggle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </nav>
+            <div id="mobile-overlay" class="navigation-mobile-overlay">
+              <div class="navigation-overlay-header">
+                <a href="index.html">
+                  <div aria-label="FABtekk Home" class="navigation-logo-link">
+                    <div class="navigation-logo-content">
+                      <div class="navigation-logo-icon">
+                        <img
+                          src="166167df-61ec-493d-99e1-00f486e578aa"
+                          alt="FABtekk Logo"
+                          width="32"
+                          height="32"
+                        />
+                      </div>
+                      <span class="navigation-brand-name section-title">
+                        FABtekk
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <button
+                  id="mobile-menu-close"
+                  aria-label="Close Menu"
+                  class="navigation-mobile-close"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M18 6L6 18M6 6l12 12"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="navigation-overlay-content">
+                <div class="navigation-mobile-links">
+                  <a href="index.html">
+                    <div class="navigation-mobile-link">
+                      <span>Services</span>
+                    </div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-mobile-link">
+                      <span>Maintenance</span>
+                    </div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-mobile-link">
+                      <span>Inspections</span>
+                    </div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-mobile-link">
+                      <span>About Us</span>
+                    </div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-mobile-cta btn btn-primary btn-lg">
+                      <span>Contact Engineering</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="navigation-mobile-footer">
+                  <p class="section-content">
+                    Specialist Engineering &amp; Manufacturing Support
+                  </p>
+                  <span class="section-content">
+                    UK-Wide Coverage | Based in Cumbria
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="navigation-container4">
+              <div class="navigation-container5">
+                <style>
+                          @keyframes menuFadeIn {from {opacity: 0;
+                  transform: translateY(-10px);}
+                  to {opacity: 1;
+                  transform: translateY(0);}}
+                </style>
+              </div>
+            </div>
+            <div class="navigation-container6">
+              <div class="navigation-container7">
+                <script defer="" data-name="navigation-logic">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const mobileMenuOpen = document.getElementById("mobile-menu-open")
+                      const mobileMenuClose = document.getElementById("mobile-menu-close")
+                      const mobileOverlay = document.getElementById("mobile-overlay")
+                      const body = document.body
+
+                      const toggleMenu = (show) => {
+                        mobileOverlay.classList.toggle("is-active", show)
+                        mobileMenuOpen.setAttribute("aria-expanded", show)
+
+                        if (show) {
+                          body.style.overflow = "hidden"
+                        } else {
+                          body.style.overflow = ""
+                        }
+                      }
+
+                      mobileMenuOpen.addEventListener("click", () => toggleMenu(true))
+                      mobileMenuClose.addEventListener("click", () => toggleMenu(false))
+
+                      // Close menu on link click
+                      const mobileLinks = mobileOverlay.querySelectorAll(".navigation-mobile-link, .navigation-mobile-cta")
+                      mobileLinks.forEach((link) => {
+                        link.addEventListener("click", () => toggleMenu(false))
+                      })
+
+                      // Handle ESC key
+                      document.addEventListener("keydown", (e) => {
+                        if (e.key === "Escape" && mobileOverlay.classList.contains("is-active")) {
+                          toggleMenu(false)
+                        }
+                      })
+
+                      // Simple scroll effect for nav bar
+                      let lastScroll = 0
+                      const nav = document.getElementById("main-nav")
+
+                      window.addEventListener("scroll", () => {
+                        const currentScroll = window.pageYOffset
+
+                        if (currentScroll > 50) {
+                          nav.style.boxShadow = "var(--shadow-level-2)"
+                          nav.style.background = "color-mix(in oklab, var(--color-surface) 98%, black)"
+                        } else {
+                          nav.style.boxShadow = "none"
+                          nav.style.background = "var(--color-surface)"
+                        }
+
+                        lastScroll = currentScroll
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </navigation-wrapper>
+        <section class="hero-diagonal">
+          <div class="hero-diagonal-background">
+            <div data-slider="hero" class="home-thq-hero-slider-elm">
+              <div class="home-thq-hero-slider-track-elm">
+                <div class="hero-slide active">
+                  <img
+                    src="794a2c91-74c8-4043-ac19-602bad32e990"
+                    alt="FABtekk engineering booklets and documentation"
+                    class="hero-slide-image"
+                  />
+                </div>
+                <div class="hero-slide">
+                  <img
+                    src="dbd3b5bc-9f89-47e4-8d42-dae0584f3709"
+                    alt="Professional oven cleaning service"
+                    class="hero-slide-image"
+                  />
+                </div>
+                <div class="hero-slide">
+                  <img
+                    src="cd6afd48-ace4-414f-9565-c0dfb810a105"
+                    alt="Industrial oven installation and moving"
+                    class="hero-slide-image"
+                  />
+                </div>
+              </div>
+              <div class="home-thq-hero-slider-nav-elm">
+                <button
+                  aria-label="Previous slide"
+                  class="button hero-slider-arrow hero-slider-prev"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M15 18l-6-6 6-6"></path>
+                  </svg>
+                </button>
+                <div class="home-thq-hero-slider-dots-elm">
+                  <button
+                    data-slide="0"
+                    aria-label="Go to slide 1"
+                    class="button hero-slider-dot active"
+                  ></button>
+                  <button
+                    data-slide="1"
+                    aria-label="Go to slide 2"
+                    class="button hero-slider-dot"
+                  ></button>
+                  <button
+                    data-slide="2"
+                    aria-label="Go to slide 3"
+                    class="button hero-slider-dot"
+                  ></button>
+                </div>
+                <button
+                  aria-label="Next slide"
+                  class="button hero-slider-arrow hero-slider-next"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M9 18l6-6-6-6"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="hero-diagonal-overlay"></div>
+          </div>
+          <div class="hero-diagonal-wrapper">
+            <div class="hero-diagonal-content">
+              <div class="hero-diagonal-text">
+                <h1 class="home-hero-title hero-title">
+                  <span>First-Time-Right</span>
+                  <br />
+                  <span class="home-thq-hero-accent-text-elm">
+                    Engineering Excellence
+                  </span>
+                </h1>
+                <p class="hero-subtitle">
+                  Specialist production engineering with UK-wide coverage. We
+                  are committed to getting it right the first time to reduce
+                  downtime, eliminate rework, and maximize your manufacturing
+                  efficiency.
+                </p>
+                <div class="hero-diagonal-actions">
+                  <a href="#contact">
+                    <div class="btn btn-primary btn-lg">
+                      <span>Get a Quick Quote</span>
+                    </div>
+                  </a>
+                  <a href="#services">
+                    <div class="btn btn-lg btn-outline">
+                      <span>Our Services</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="hero-diagonal-stats">
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number">UK</span>
+                  <span class="hero-stat-label">Wide Coverage</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-number">24/7</span>
+                  <span class="hero-stat-label">Emergency Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-diagonal-divider"></div>
+        </section>
+        <div class="home-container2">
+          <div class="home-container3">
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                    ;(function () {
+                      const slider = document.querySelector('[data-slider="hero"]')
+                      if (!slider) return
+
+                      const slides = slider.querySelectorAll(".hero-slide")
+                      const dots = slider.querySelectorAll(".hero-slider-dot")
+                      const prevBtn = slider.querySelector(".hero-slider-prev")
+                      const nextBtn = slider.querySelector(".hero-slider-next")
+                      let currentSlide = 0
+                      let autoAdvanceInterval
+                      const autoAdvanceDelay = 5000
+
+                      function showSlide(index) {
+                        slides.forEach((slide, i) => {
+                          slide.classList.toggle("active", i === index)
+                        })
+                        dots.forEach((dot, i) => {
+                          dot.classList.toggle("active", i === index)
+                        })
+                        currentSlide = index
+                      }
+
+                      function nextSlide() {
+                        const next = (currentSlide + 1) % slides.length
+                        showSlide(next)
+                      }
+
+                      function prevSlide() {
+                        const prev = (currentSlide - 1 + slides.length) % slides.length
+                        showSlide(prev)
+                      }
+
+                      function startAutoAdvance() {
+                        autoAdvanceInterval = setInterval(nextSlide, autoAdvanceDelay)
+                      }
+
+                      function stopAutoAdvance() {
+                        clearInterval(autoAdvanceInterval)
+                      }
+
+                      function resetAutoAdvance() {
+                        stopAutoAdvance()
+                        startAutoAdvance()
+                      }
+
+                      if (prevBtn) {
+                        prevBtn.addEventListener("click", function () {
+                          prevSlide()
+                          resetAutoAdvance()
+                        })
+                      }
+
+                      if (nextBtn) {
+                        nextBtn.addEventListener("click", function () {
+                          nextSlide()
+                          resetAutoAdvance()
+                        })
+                      }
+
+                      dots.forEach((dot, index) => {
+                        dot.addEventListener("click", function () {
+                          showSlide(index)
+                          resetAutoAdvance()
+                        })
+                      })
+
+                      slider.addEventListener("mouseenter", stopAutoAdvance)
+                      slider.addEventListener("mouseleave", startAutoAdvance)
+
+                      startAutoAdvance()
+                    })()
+                  })()
+              });
+            </script>
+          </div>
+        </div>
+        <section id="services" class="services-grid-section">
+          <div class="services-container">
+            <div class="services-header">
+              <h2 class="section-title">Specialist Production Services</h2>
+              <p class="section-content">
+                Comprehensive engineering solutions tailored for high-output
+                manufacturing environments.
+              </p>
+            </div>
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 6v6l4 2"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Preventative Maintenance</h3>
+                <p class="section-content">
+                  Scheduled inspections and proactive repairs to identify issues
+                  before they cause costly production stops.
+                </p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Emergency Call-Outs</h3>
+                <p class="section-content">
+                  Rapid response engineering support to get your production line
+                  back up and running during critical failures.
+                </p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                      ></path>
+                      <path d="m9 12l2 2l4-4"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">
+                  Divider Servicing &amp; Cleaning
+                </h3>
+                <p class="section-content">
+                  Regular divider servicing, oven cleaning, and general
+                  inspections to maintain hygiene and precision.
+                </p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.42 15.17L17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14q.19.017.384.017a4.5 4.5 0 0 0 4.102-6.352l-3.276 3.276a3 3 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Install &amp; Decommissioning</h3>
+                <p class="section-content">
+                  Professional machinery installation and safe decommissioning
+                  of legacy production equipment.
+                </p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.151c.833-.687.995-1.875.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.275a3 3 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852"
+                    ></path>
+                    <path d="M4.867 19.125h.008v.008h-.008z"></path>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Refurbishments</h3>
+                <p class="section-content">
+                  Extend the lifespan of your assets with comprehensive
+                  mechanical and electrical refurbishments.
+                </p>
+              </div>
+              <div class="service-card">
+                <div class="service-icon-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 6v6h4"></path>
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="section-subtitle">Shift Cover &amp; Reports</h3>
+                <p class="section-content">
+                  Expert engineering shift cover and detailed condition reports
+                  to support your internal maintenance teams.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="stats-section">
+          <div class="stats-container">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <span class="stat-value">UK-Wide</span>
+                <span class="stat-label">Service Coverage</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-value">Cumbria</span>
+                <span class="stat-label">Main Workshop Hub</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-value">100%</span>
+                <span class="stat-label">First-Time-Right Goal</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-value">24/7</span>
+                <span class="stat-label">Emergency Response</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-value">30%</span>
+                <span class="stat-label">Avg. Downtime Reduction</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-value">Expert</span>
+                <span class="stat-label">Director-Led Teams</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <why-choose-us-wrapper
+          class="why-choose-us-wrapper"
+          rootclassname="why-choose-usundefined"
+        >
+          <!--WhyChooseUs component-->
+          <div class="why-choose-us-container1 why-choose-usroot-class-name">
+            <div class="why-choose-us-container2">
+              <div class="why-choose-us-container3">
+                <style>
+                  @media (prefers-reduced-motion: reduce) {
+                  .why-choose-us-card {
+                    opacity: 1;
+                    animation: none;
+                    transform: none;
+                  }
+                  }
+                </style>
+              </div>
+            </div>
+            <section
+              aria-labelledby="why-choose-us-title"
+              class="why-choose-us-section"
+            >
+              <div class="why-choose-us-container">
+                <div class="why-choose-us-header">
+                  <h2 id="why-choose-us-title" class="section-title">
+                    Why Choose FABtekk Engineering?
+                  </h2>
+                  <div class="why-choose-us-accent-line"></div>
+                </div>
+                <div class="why-choose-us-grid">
+                  <article class="why-choose-us-card">
+                    <div class="why-choose-us-icon-wrapper">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M3.85 8.62a4 4 0 0 1 4.78-4.77a4 4 0 0 1 6.74 0a4 4 0 0 1 4.78 4.78a4 4 0 0 1 0 6.74a4 4 0 0 1-4.77 4.78a4 4 0 0 1-6.75 0a4 4 0 0 1-4.78-4.77a4 4 0 0 1 0-6.76M15 9l-6 6m0-6l6 6"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="why-choose-us-card-content">
+                      <h3 class="why-choose-us-card-title">
+                        Food Industry Specialists
+                      </h3>
+                      <p class="section-content">
+                        Deep expertise in food processing equipment and
+                        regulatory compliance
+                      </p>
+                    </div>
+                  </article>
+                  <article class="why-choose-us-card">
+                    <div class="why-choose-us-icon-wrapper">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        >
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <path d="M12 6v6l4 2"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="why-choose-us-card-content">
+                      <h3 class="why-choose-us-card-title">
+                        24/7 Emergency Response
+                      </h3>
+                      <p class="section-content">
+                        Rapid response to minimize production downtime and
+                        maintain operations
+                      </p>
+                    </div>
+                  </article>
+                  <article class="why-choose-us-card">
+                    <div class="why-choose-us-icon-wrapper">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        >
+                          <path
+                            d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"
+                          ></path>
+                          <circle cx="9" cy="7" r="4"></circle>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="why-choose-us-card-content">
+                      <h3 class="why-choose-us-card-title">Experienced Team</h3>
+                      <p class="section-content">
+                        Qualified engineers with extensive food industry
+                        experience
+                      </p>
+                    </div>
+                  </article>
+                  <article class="why-choose-us-card">
+                    <div class="why-choose-us-icon-wrapper">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        >
+                          <path
+                            d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0a2.34 2.34 0 0 0 3.319 1.915a2.34 2.34 0 0 1 2.33 4.033a2.34 2.34 0 0 0 0 3.831a2.34 2.34 0 0 1-2.33 4.033a2.34 2.34 0 0 0-3.319 1.915a2.34 2.34 0 0 1-4.659 0a2.34 2.34 0 0 0-3.32-1.915a2.34 2.34 0 0 1-2.33-4.033a2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+                          ></path>
+                          <circle cx="12" cy="12" r="3"></circle>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="why-choose-us-card-content">
+                      <h3 class="why-choose-us-card-title">
+                        Comprehensive Solutions
+                      </h3>
+                      <p class="section-content">
+                        From maintenance to fabrication, we handle all your
+                        engineering needs
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-choose-us-footer">
+                  <a href="Homepage">
+                    <div class="btn btn-primary btn-lg">
+                      <span>Contact Our Engineers</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <div class="why-choose-us-container4">
+              <div class="why-choose-us-container5">
+                <style>
+                          @keyframes fadeInUp {from {opacity: 0;
+                  transform: translateY(20px);}
+                  to {opacity: 1;
+                  transform: translateY(0);}}
+                </style>
+              </div>
+            </div>
+            <div class="why-choose-us-container6">
+              <div class="why-choose-us-container7">
+                <script defer="" data-name="why-choose-us-reveal">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const cards = document.querySelectorAll(".why-choose-us-card")
+
+                      const observerOptions = {
+                        threshold: 0.1,
+                        rootMargin: "0px 0px -50px 0px",
+                      }
+
+                      const observer = new IntersectionObserver((entries) => {
+                        entries.forEach((entry) => {
+                          if (entry.isIntersecting) {
+                            entry.target.classList.add("is-visible")
+                            observer.unobserve(entry.target)
+                          }
+                        })
+                      }, observerOptions)
+
+                      cards.forEach((card) => {
+                        observer.observe(card)
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </why-choose-us-wrapper>
+        <section id="contact" class="cta-section">
+          <div class="cta-container">
+            <div class="cta-split">
+              <div class="cta-info">
+                <h2 class="section-title">
+                  Ready to Optimize Your Production?
+                </h2>
+                <p class="section-content">
+                  Contact FABtekk today for specialist engineering support.
+                  Whether it's an emergency call-out or a long-term maintenance
+                  strategy, we deliver UK-wide with a commitment to quality.
+                </p>
+                <div class="cta-contact-details">
+                  <div class="contact-card">
+                    <h4 class="section-subtitle">Emergency Line</h4>
+                    <p class="section-content">
+                      24/7 Rapid Response for Production Failures
+                    </p>
+                    <span class="contact-highlight">UK-Wide Response</span>
+                  </div>
+                  <div class="contact-card">
+                    <h4 class="section-subtitle">Cumbria Workshop</h4>
+                    <p class="section-content">
+                      Our main hub for major refurbishments and inspections.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="cta-form-wrapper">
+                <form
+                  action="/submit"
+                  method="POST"
+                  data-form-id="daeb439a-9e1e-4275-a79c-54c6b19e8c44"
+                  class="quick-quote-form"
+                >
+                  <h3 class="section-subtitle">Request a Quick Quote</h3>
+                  <div class="form-group">
+                    <label for="name" class="section-content">Full Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="true"
+                      required="true"
+                      placeholder="John Doe"
+                      data-form-field-id="name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="section-content">
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required="true"
+                      placeholder="john@company.com"
+                      data-form-field-id="email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="service" class="section-content">
+                      Service Required
+                    </label>
+                    <select
+                      id="service"
+                      name="service"
+                      required="true"
+                      data-form-field-id="service"
+                    >
+                      <option>Select a service...</option>
+                      <option value="maintenance">
+                        Preventative Maintenance
+                      </option>
+                      <option value="emergency">Emergency Call-Out</option>
+                      <option value="refurbishment">Refurbishment</option>
+                      <option value="other">Other Inquiry</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="message" class="section-content">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required="true"
+                      rows="4"
+                      placeholder="How can we help?"
+                      data-form-field-id="message"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    id="thq_button_V7sO"
+                    name="button"
+                    data-form-field-id="thq_button_V7sO"
+                    class="btn-full btn btn-primary btn-lg"
+                  >
+                    Send Quote Request
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="home-container4">
+          <div class="home-container5">
+            <script defer="" data-name="fabtekk-interactions">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  // Handle form submission UX enhancement
+                  const quoteForm = document.querySelector(".quick-quote-form")
+                  if (quoteForm) {
+                    quoteForm.addEventListener("submit", (e) => {
+                      // Note: Native submission still happens via action attribute
+                      // This is purely for visual feedback before/during transition
+                      const submitBtn = quoteForm.querySelector('button[type="submit"]')
+                      submitBtn.innerText = "Sending Request..."
+                      submitBtn.style.opacity = "0.7"
+                      submitBtn.style.pointerEvents = "none"
+                    })
+                  }
+
+                  // Simple scroll reveal for service cards
+                  const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: "0px 0px -50px 0px",
+                  }
+
+                  const revealObserver = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                        entry.target.style.opacity = "1"
+                        entry.target.style.transform = "translateY(0)"
+                        revealObserver.unobserve(entry.target)
+                      }
+                    })
+                  }, observerOptions)
+
+                  document.querySelectorAll(".service-card, .stat-card, .process-step").forEach((el) => {
+                    el.style.opacity = "0"
+                    el.style.transform = "translateY(20px)"
+                    el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out"
+                    revealObserver.observe(el)
+                  })
+                })()
+              });
+            </script>
+          </div>
+        </div>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <div class="footer-container1">
+            <footer class="footer-root">
+              <div class="footer-container">
+                <div class="footer-grid">
+                  <div class="footer-column footer-brand-section">
+                    <div class="footer-logo-wrapper">
+                      <div class="footer-logo-icon">
+                        <img
+                          src="166167df-61ec-493d-99e1-00f486e578aa"
+                          alt="FABtekk Logo"
+                          width="32"
+                          height="32"
+                        />
+                      </div>
+                      <span class="footer-brand-name">FABtekk</span>
+                    </div>
+                    <p class="footer-description section-content">
+                      Specialist engineering for the production industry.
+                      Committed to high-quality workmanship, reducing downtime,
+                      and increasing efficiency across the UK.
+                    </p>
+                    <div class="footer-social-links">
+                      <a href="#">
+                        <div aria-label="LinkedIn" class="footer-social-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                            >
+                              <path
+                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                              ></path>
+                              <circle cx="4" cy="4" r="2"></circle>
+                            </g>
+                          </svg>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div aria-label="Facebook" class="footer-social-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footer-column">
+                    <h2 class="footer-heading section-subtitle">
+                      Our Services
+                    </h2>
+                    <ul class="footer-links-list">
+                      <li class="footer-link-item">
+                        <a href="#">
+                          <div class="footer-link">
+                            <span>Preventative Maintenance</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="footer-link-item">
+                        <a href="#">
+                          <div class="footer-link">
+                            <span>Emergency Call-Outs</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="footer-link-item">
+                        <a href="#">
+                          <div class="footer-link">
+                            <span>Divider Servicing</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="footer-link-item">
+                        <a href="#">
+                          <div class="footer-link">
+                            <span>Oven Cleaning &amp; Inspection</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="footer-link-item">
+                        <a href="#">
+                          <div class="footer-link">
+                            <span>Installation &amp; Decommissioning</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="footer-link-item">
+                        <a href="#">
+                          <div class="footer-link">
+                            <span>Refurbishments &amp; Reports</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer-column">
+                    <h2 class="footer-heading section-subtitle">Contact Us</h2>
+                    <div class="footer-contact-info">
+                      <div class="footer-contact-item">
+                        <div class="footer-icon-box">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="m12 18l-2-4l-7-3.5a.55.55 0 0 1 0-1L21 3l-2.901 8.034m3.022 9.087a3 3 0 1 0-4.242 0Q17.506 20.749 19 22q1.577-1.335 2.121-1.879M19 18v.01"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="footer-contact-text">
+                          <span class="footer-contact-label">
+                            Main Workshop
+                          </span>
+                          <span class="section-content">
+                            Cumbria, United Kingdom
+                          </span>
+                        </div>
+                      </div>
+                      <div class="footer-contact-item">
+                        <div class="footer-icon-box">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="footer-contact-text">
+                          <span class="footer-contact-label">24/7 Support</span>
+                          <a href="tel:#">
+                            <div class="footer-link">
+                              <span>Request Emergency Cover</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="footer-contact-item">
+                        <div class="footer-icon-box">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                            >
+                              <path
+                                d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                              ></path>
+                              <rect
+                                width="20"
+                                height="16"
+                                x="2"
+                                y="4"
+                                rx="2"
+                              ></rect>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="footer-contact-text">
+                          <span class="footer-contact-label">
+                            Email Enquiries
+                          </span>
+                          <a href="mailto:info@fabtekk.co.uk?subject=">
+                            <div class="footer-link">
+                              <span>info@fabtekk.co.uk</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-bottom">
+                  <div class="footer-bottom-content">
+                    <p class="footer-copyright">
+                      &amp;copy; 2024 FABtekk Specialist Engineering. All Rights
+                      Reserved.
+                    </p>
+                    <div class="footer-legal-links">
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Privacy Policy</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Terms of Service</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Cookies</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <script defer="" data-name="footer-interactions">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const footerLinks = document.querySelectorAll(".footer-link")
+
+                      footerLinks.forEach((link) => {
+                        link.addEventListener("mouseenter", () => {
+                          link.style.transition = "all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)"
+                        })
+                      })
+
+                      const socialIcons = document.querySelectorAll(".footer-social-icon")
+                      socialIcons.forEach((icon) => {
+                        icon.addEventListener("click", (e) => {
+                          const ripple = document.createElement("span")
+                          ripple.style.position = "absolute"
+                          ripple.style.width = "100%"
+                          ripple.style.height = "100%"
+                          ripple.style.background = "rgba(255,255,255,0.2)"
+                          ripple.style.borderRadius = "50%"
+                          ripple.style.transform = "scale(0)"
+                          ripple.style.animation = "ripple-effect 0.4s linear"
+
+                          icon.style.position = "relative"
+                          icon.style.overflow = "hidden"
+                          icon.appendChild(ripple)
+
+                          setTimeout(() => {
+                            ripple.remove()
+                          }, 400)
+                        })
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </footer-wrapper>
+        <a href="https://play.teleporthq.io/signup">
+          <div aria-label="Sign up to TeleportHQ" class="home-container6">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 19 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="home-icon33"
+            >
+              <path
+                d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
+                fill="#B23ADE"
+              ></path>
+              <path
+                d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z"
+                fill="#FF5C5C"
+              ></path>
+              <path
+                d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z"
+                fill="#2874DE"
+              ></path>
+            </svg>
+            <span class="home-text4">Built in TeleportHQ</span>
+          </div>
+        </a>
+      </div>
+      <link
+        rel="canonical"
+        href="https://new-live-echidna-3vji5d.teleporthq.app/"
+      />
+    </div>
+  </body>
+</html>
