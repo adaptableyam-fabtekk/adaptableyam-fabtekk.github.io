@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — FABtekk Engineering Limited</title>
+<meta name="description" content="Contact FABtekk Engineering: 07970 864218, info@fabtekk.co.uk. Workshop: Unit 4, Newtongate, Penrith, Cumbria, CA11 0BF. UK wide cover.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" aria-label="FABtekk home">
+      <img class="logo-img" src="images/logo.jpg" alt="FABtekk Engineering Limited">
+    </a>
+    <button class="burger" aria-label="Open menu">≡</button>
+    <nav class="nav-links" id="navlinks">
+      <a href="index.html" >Home</a>
+      <a href="services.html" >Services</a>
+      <a href="projects.html" >Projects</a>
+      <a href="about.html" >About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="nav-cta">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-banner">
+    <div class="wrap">
+      <span class="plate">Contact</span>
+      <h1>We're here to help — UK wide</h1>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <div class="c-item">
+            <div class="k">Phone — Paul Stephenson</div>
+            <div class="v"><a href="tel:+447970864218">07970 864218</a></div>
+          </div>
+          <div class="c-item">
+            <div class="k">Email</div>
+            <div class="v"><a href="mailto:info@fabtekk.co.uk">info@fabtekk.co.uk</a></div>
+          </div>
+          <div class="c-item">
+            <div class="k">Workshop</div>
+            <div class="v" style="font-size:17px">FABtekk Engineering<br>Unit 4, Newtongate,<br>Penrith, Cumbria,<br>CA11 0BF</div>
+          </div>
+        </div>
+        <div>
+          <form id="contactForm" novalidate>
+            <div class="f-row">
+              <div class="f-group">
+                <label for="cf-name">Name</label>
+                <input id="cf-name" name="name" type="text" required autocomplete="name">
+              </div>
+              <div class="f-group">
+                <label for="cf-company">Company</label>
+                <input id="cf-company" name="company" type="text" autocomplete="organization">
+              </div>
+            </div>
+            <div class="f-row">
+              <div class="f-group">
+                <label for="cf-email">Email</label>
+                <input id="cf-email" name="email" type="email" required autocomplete="email">
+              </div>
+              <div class="f-group">
+                <label for="cf-phone">Phone</label>
+                <input id="cf-phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+            </div>
+            <div class="f-group">
+              <label for="cf-subject">Enquiry type</label>
+              <select id="cf-subject" name="subject">
+                <option>General enquiry</option>
+                <option>Emergency call out</option>
+                <option>Fabrication &amp; spares</option>
+                <option>Maintenance / servicing</option>
+                <option>Installation / decommissioning</option>
+                <option>Shift cover</option>
+              </select>
+            </div>
+            <div class="f-group">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-orange" id="cf-submit">Send message</button>
+            <div class="form-status" id="cf-status" role="status"></div>
+            <p class="form-note">Your message is sent directly to info@fabtekk.co.uk. For urgent breakdowns, please call.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img class="logo-img" src="images/logo.jpg" alt="FABtekk Engineering Limited" style="margin-bottom:14px">
+        <span class="tagline-pill">service &amp; innovation</span>
+        <p style="margin-top:16px">Food production and manufacturing engineers. High standards of workmanship, right first time — reducing rework and downtime for manufacturers across the UK.</p>
+      </div>
+      <div>
+        <div class="foot-h">Contact</div>
+        <p><a href="tel:+447970864218">07970 864218</a><br>
+        <a href="mailto:info@fabtekk.co.uk">info@fabtekk.co.uk</a></p>
+        <p style="margin-top:12px"><a href="https://www.linkedin.com/search/results/all/?keywords=FABtekk%20Engineering%20ltd" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.facebook.com/Fabtekk-engineering-821537867869203" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+      <div>
+        <div class="foot-h">Workshop</div>
+        <p>FABtekk Engineering<br>Unit 4, Newtongate,<br>Penrith, Cumbria,<br>CA11 0BF</p>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>Registered address: Lacewood, The Slack, Wigton, Cumbria, CA7 0LX</span>
+      <span>Registered in England &amp; Wales · Company No. 09029666 · VAT No. 196285464</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
