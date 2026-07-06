@@ -82,9 +82,14 @@ header{
 .hero-img{position:absolute;inset:0;background:url("../images/hero.jpg") center 30%/cover no-repeat}
 .hero-img::after{
   content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(0,14,36,.55) 0%,rgba(0,14,36,.25) 40%,rgba(0,14,36,.94) 88%);
+  background:linear-gradient(100deg,rgba(0,14,36,.92) 0%,rgba(0,14,36,.82) 32%,rgba(0,14,36,.45) 58%,rgba(0,14,36,.2) 78%),
+             linear-gradient(180deg,rgba(0,14,36,.35) 0%,rgba(0,14,36,.15) 35%,rgba(0,14,36,.95) 90%);
 }
 .hero-inner{position:relative;z-index:2;width:100%;padding:120px 0 72px}
+.hero-copy{
+  max-width:720px;background:rgba(0,14,36,.72);border:1px solid rgba(255,255,255,.08);
+  border-left:3px solid var(--orange);padding:36px 40px;backdrop-filter:blur(3px);
+}
 .hero h1{
   font-size:clamp(44px,7vw,84px);font-weight:600;text-transform:uppercase;
   letter-spacing:1px;max-width:14ch;
@@ -265,6 +270,7 @@ footer a:hover{color:var(--orange)}
   .gallery img{height:240px}
   section{padding:64px 0}
   .hero{min-height:78vh}
+  .hero-copy{padding:24px 22px;border-left-width:2px}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
